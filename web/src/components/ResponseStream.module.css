@@ -1,0 +1,265 @@
+/* ResponseStream component styles */
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: var(--space-2xl) auto 0;
+    animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+}
+
+/* --- Status indicator --- */
+.status {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-md);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.statusDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-amber);
+    animation: subtlePulse 1.5s ease-in-out infinite;
+}
+
+/* --- Paper card --- */
+.paperCard {
+    border: 1px solid var(--border-default);
+    border-left: 3px solid var(--accent-amber);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    background: var(--bg-elevated);
+    animation: scaleIn var(--duration-normal) var(--ease-out) forwards;
+}
+
+.paperMeta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+}
+
+.paperYear {
+    color: var(--accent-amber);
+    font-weight: 500;
+}
+
+.paperDivider {
+    color: var(--text-faint);
+}
+
+.paperAuthors {
+    color: var(--text-secondary);
+}
+
+.paperTitle {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: var(--space-sm);
+}
+
+.paperTitle a {
+    color: var(--text-primary);
+    transition: color var(--duration-fast) var(--ease-out);
+}
+
+.paperTitle a:hover {
+    color: var(--accent-amber);
+}
+
+.paperAbstract {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.paperList {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    background: var(--bg-secondary);
+}
+
+.paperListTitle {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--space-sm);
+}
+
+.paperListItem {
+    display: block;
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.paperListItem:hover {
+    border-color: var(--border-default);
+}
+
+.paperListItemMeta {
+    display: flex;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.paperListItemTitle {
+    margin-top: 2px;
+    font-family: var(--font-body);
+    font-size: 0.94rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* --- Error --- */
+.error {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    border: 1px solid rgba(196, 92, 92, 0.3);
+    border-radius: var(--radius-md);
+    background: rgba(196, 92, 92, 0.08);
+    color: var(--error);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    margin-bottom: var(--space-lg);
+}
+
+.errorIcon {
+    font-weight: 700;
+}
+
+/* --- Response text --- */
+.responseText {
+    position: relative;
+}
+
+.markdown {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-primary);
+}
+
+.markdown h1 {
+    font-size: 1.6rem;
+    margin: var(--space-xl) 0 var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.markdown h2 {
+    font-size: 1.35rem;
+    margin: var(--space-lg) 0 var(--space-md);
+}
+
+.markdown h3 {
+    font-size: 1.15rem;
+    margin: var(--space-lg) 0 var(--space-sm);
+}
+
+.markdown h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: var(--space-md) 0 var(--space-sm);
+}
+
+.markdown p {
+    margin-bottom: var(--space-md);
+}
+
+.markdown strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.markdown em {
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+.markdown a {
+    color: var(--accent-amber);
+    text-decoration: underline;
+    text-decoration-color: rgba(201, 165, 90, 0.3);
+    text-underline-offset: 3px;
+}
+
+.markdown a:hover {
+    text-decoration-color: var(--accent-amber);
+}
+
+.markdown ul,
+.markdown ol {
+    margin: var(--space-md) 0;
+    padding-left: var(--space-lg);
+}
+
+.markdown li {
+    margin-bottom: var(--space-xs);
+}
+
+.markdown code {
+    font-family: var(--font-mono);
+    font-size: 0.82em;
+    background: var(--bg-surface);
+    padding: 0.15em 0.4em;
+    border-radius: var(--radius-sm);
+    color: var(--accent-warm);
+}
+
+.markdown pre {
+    margin: var(--space-md) 0;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    overflow-x: auto;
+}
+
+.markdown pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+    font-size: 0.82rem;
+}
+
+/* Blinking cursor */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: var(--accent-amber);
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: subtlePulse 1s ease-in-out infinite;
+}

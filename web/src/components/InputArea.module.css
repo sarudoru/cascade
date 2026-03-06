@@ -1,0 +1,179 @@
+/* InputArea component styles */
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    animation: fadeInUp var(--duration-slow) var(--ease-out) both;
+    animation-delay: 200ms;
+}
+
+/* --- Input wrapper --- */
+.inputWrapper {
+    position: relative;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--bg-secondary);
+    transition: all var(--duration-normal) var(--ease-out);
+    overflow: hidden;
+}
+
+.container.focused .inputWrapper {
+    border-color: var(--border-active);
+    box-shadow:
+        0 0 0 1px var(--accent-amber-dim),
+        0 0 40px -10px var(--accent-amber-glow),
+        0 8px 32px -8px rgba(0, 0, 0, 0.5);
+}
+
+.textarea {
+    width: 100%;
+    min-height: 56px;
+    max-height: 240px;
+    padding: var(--space-lg) var(--space-xl);
+    padding-right: 56px;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+    resize: none;
+    outline: none;
+}
+
+.textarea::placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.textarea:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.submitButton {
+    position: absolute;
+    right: var(--space-md);
+    bottom: var(--space-md);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.submitButton:hover:not(:disabled) {
+    color: var(--accent-amber);
+    border-color: var(--accent-amber);
+    background: var(--accent-amber-dim);
+}
+
+.submitButton:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* --- URL detection --- */
+.urlDetected {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    animation: fadeIn var(--duration-fast) var(--ease-out) forwards;
+}
+
+.urlDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-amber);
+    animation: subtlePulse 2s ease-in-out infinite;
+}
+
+.urlText {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--accent-amber);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* --- Mode pills --- */
+.modes {
+    display: flex;
+    gap: var(--space-sm);
+    padding: var(--space-md) 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn var(--duration-slow) var(--ease-out) both;
+    animation-delay: 400ms;
+}
+
+.modePill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out);
+    white-space: nowrap;
+}
+
+.modePill:hover {
+    color: var(--text-secondary);
+    border-color: var(--border-default);
+    background: var(--bg-elevated);
+}
+
+.modePill.active {
+    color: var(--accent-amber);
+    border-color: var(--accent-amber);
+    background: var(--accent-amber-dim);
+}
+
+.modeIcon {
+    font-size: 0.85rem;
+    line-height: 1;
+}
+
+/* --- Hint --- */
+.hint {
+    text-align: center;
+    padding-top: var(--space-sm);
+    animation: fadeIn var(--duration-slow) var(--ease-out) both;
+    animation-delay: 600ms;
+}
+
+.hintKey {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-faint);
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    margin-right: 4px;
+}
+
+.hint {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-faint);
+    letter-spacing: 0.04em;
+}

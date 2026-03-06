@@ -1,0 +1,167 @@
+/* Main page styles */
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-2xl) var(--space-lg);
+    position: relative;
+}
+
+/* --- Ambient background glow --- */
+.ambientGlow {
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse at center,
+            rgba(201, 165, 90, 0.04) 0%,
+            rgba(201, 165, 90, 0.01) 40%,
+            transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- Header / Wordmark --- */
+.header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+    animation: fadeIn var(--duration-slow) var(--ease-out) forwards;
+    position: relative;
+    z-index: 1;
+}
+
+.wordmark {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: var(--space-sm);
+    text-indent: 0.25em;
+    /* optical centering for tracked text */
+}
+
+.subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    animation: fadeIn var(--duration-slow) var(--ease-out) both;
+    animation-delay: 100ms;
+}
+
+/* --- Graph loading --- */
+.graphLoading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-3xl);
+    animation: fadeIn var(--duration-normal) var(--ease-out) forwards;
+}
+
+.loadingSpinner {
+    width: 28px;
+    height: 28px;
+    border: 2px solid var(--border-subtle);
+    border-top-color: var(--accent-amber);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingText {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
+}
+
+.loadingHint {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-faint);
+    letter-spacing: 0.02em;
+}
+
+/* --- Graph section --- */
+.graphSection {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: var(--space-lg);
+    animation: fadeInUp var(--duration-slow) var(--ease-out) forwards;
+    position: relative;
+    z-index: 1;
+}
+
+.graphHeader {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.backButton {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    background: none;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill);
+    padding: 4px 14px;
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out);
+    letter-spacing: 0.02em;
+}
+
+.backButton:hover {
+    color: var(--text-primary);
+    border-color: var(--border-default);
+}
+
+.graphTitle {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* --- Footer --- */
+.footer {
+    margin-top: auto;
+    padding-top: var(--space-3xl);
+    text-align: center;
+    width: 100%;
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+}
+
+.footerLine {
+    height: 1px;
+    background: linear-gradient(to right,
+            transparent,
+            var(--border-subtle),
+            transparent);
+    margin-bottom: var(--space-md);
+}
+
+.footerText {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--text-faint);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
