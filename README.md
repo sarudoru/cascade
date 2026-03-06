@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/banner.png" alt="Cascade" width="600" />
+  <img src=".github/banner.png" alt="Cascade" width="720" />
 </p>
 
 <p align="center">
@@ -7,10 +7,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-coming_soon-c9a55a?style=flat-square&labelColor=0a0a0a" alt="Status: Coming Soon" />
-  <img src="https://img.shields.io/badge/python-≥3.10-c9a55a?style=flat-square&labelColor=0a0a0a&logo=python&logoColor=c9a55a" alt="Python 3.10+" />
-  <img src="https://img.shields.io/badge/next.js-15-c9a55a?style=flat-square&labelColor=0a0a0a&logo=nextdotjs&logoColor=c9a55a" alt="Next.js" />
-  <img src="https://img.shields.io/badge/license-MIT-c9a55a?style=flat-square&labelColor=0a0a0a" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/status-coming_soon-111111?style=flat-square&labelColor=ffffff" alt="Status: Coming Soon" />
+  <img src="https://img.shields.io/badge/python-≥3.10-111111?style=flat-square&labelColor=ffffff&logo=python&logoColor=111111" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/next.js-15-111111?style=flat-square&labelColor=ffffff&logo=nextdotjs&logoColor=111111" alt="Next.js" />
+  <img src="https://img.shields.io/badge/license-MIT-111111?style=flat-square&labelColor=ffffff" alt="License: MIT" />
 </p>
 
 ---
@@ -73,12 +73,12 @@ cascade/
 ### ✦ &nbsp; Built With
 
 <p>
-  <img src="https://img.shields.io/badge/FastAPI-0a0a0a?style=for-the-badge&logo=fastapi&logoColor=c9a55a" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Next.js-0a0a0a?style=for-the-badge&logo=nextdotjs&logoColor=c9a55a" alt="Next.js" />
-  <img src="https://img.shields.io/badge/OpenAI-0a0a0a?style=for-the-badge&logo=openai&logoColor=c9a55a" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Anthropic-0a0a0a?style=for-the-badge&logo=anthropic&logoColor=c9a55a" alt="Anthropic" />
-  <img src="https://img.shields.io/badge/D3.js-0a0a0a?style=for-the-badge&logo=d3dotjs&logoColor=c9a55a" alt="D3.js" />
-  <img src="https://img.shields.io/badge/ChromaDB-0a0a0a?style=for-the-badge&logo=databricks&logoColor=c9a55a" alt="ChromaDB" />
+  <img src="https://img.shields.io/badge/FastAPI-111111?style=for-the-badge&logo=fastapi&logoColor=ffffff" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=ffffff" alt="Next.js" />
+  <img src="https://img.shields.io/badge/OpenAI-111111?style=for-the-badge&logo=openai&logoColor=ffffff" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Anthropic-111111?style=for-the-badge&logo=anthropic&logoColor=ffffff" alt="Anthropic" />
+  <img src="https://img.shields.io/badge/D3.js-111111?style=for-the-badge&logo=d3dotjs&logoColor=ffffff" alt="D3.js" />
+  <img src="https://img.shields.io/badge/ChromaDB-111111?style=for-the-badge&logo=databricks&logoColor=ffffff" alt="ChromaDB" />
 </p>
 
 <br />
