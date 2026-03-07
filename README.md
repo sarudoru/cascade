@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/banner.png" alt="Cascade" width="720" />
+  <img src="./.github/banner.png" alt="Cascade" width="720" />
 </p>
 
 <p align="center">
@@ -16,8 +16,6 @@
 ---
 
 <br />
-
-<h3 align="center">🚧&nbsp;&nbsp;Coming Soon&nbsp;&nbsp;🚧</h3>
 
 <p align="center">
   Cascade is being built in the open. <br />
