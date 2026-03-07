@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.github/banner.png" alt="Cascade" width="720" />
+  <img src="./banner.png" alt="Cascade" width="720" />
 </p>
 
 <p align="center">
